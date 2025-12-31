@@ -161,3 +161,155 @@ if (y in list):
 else:
     print("y is NOT present in given list")
 
+# Ternary Operator
+a, b = 10, 20
+min = a if a < b else b
+
+print(min)
+
+# Operator Precedence
+expr = 10 + 20 * 30
+print(expr)
+name = "Alex"
+age = 0
+
+if name == "Alex" or name == "John" and age >= 2:
+    print("Hello! Welcome.")
+else:
+    print("Good Bye!!")
+
+# Operator Associativity
+print(100 / 10 * 10)
+print(5 - 2 + 3)
+print(5 - (2 + 3))
+print(2 ** 3 ** 2)
+
+
+# Python Data Types
+x = 50  # int
+x = 60.5  # float
+x = "Hello World"  # string
+x = ["geeks", "for", "geeks"]  # list 
+x = ("geeks", "for", "geeks")  # tuple
+
+# Numeric Data Types
+a = 5
+print(type(a))
+
+b = 5.0
+print(type(b))
+
+c = 2 + 4j
+print(type(c))
+
+# Sequence Data Types
+s = 'Welcome to the Geeks World'
+print(s)
+print(type(s))
+print(s[1])
+print(s[2])
+print(s[-1])
+
+a = []
+a = [1, 2, 3]
+print(a)
+b = ["Geeks", "For", "Geeks", 4, 5]
+print(b)
+
+a = ["Geeks", "For", "Geeks"]
+print("Accessing element from the list")
+print(a[0])
+print(a[2])
+print("Accessing element using negative indexing")
+print(a[-1])
+print(a[-3])
+
+tup1 = ()
+tup2 = ('Geeks', 'For')
+print("\nTuple with the use of String: ", tup2)
+
+tup1 = (1, 2, 3, 4, 5)
+print(tup1[0])
+print(tup1[-1])
+print(tup1[-3])
+
+# Set Data Type
+s1 = set()
+s1 = set("GeeksForGeeks")
+print("Set with the use of String: ", s1)
+s2 = set(["Geeks", "For", "Geeks"])
+print("Set with the use of List: ", s2)
+
+set1 = set(["Geeks", "For", "Geeks"])
+print(set1) 
+for i in set1:
+   print(i, end=" ")
+print("Geeks" in set1)
+
+# Dictionary Data Type
+d = {}
+d = {1: 'Geeks', 2: 'For', 3: 'Geeks'}
+print(d)
+d1 = dict({1: 'Geeks', 2: 'For', 3: 'Geeks'})
+print(d1)
+
+d = {1: 'Geeks', 'name': 'For', 3: 'Geeks'}
+print(d['name'])
+print(d.get(3))
+
+# For Loop
+n = 4
+for i in range(0, n):
+    print(i)
+
+li = ["geeks", "for", "geeks"]
+for x in li:
+    print(x)
+    
+tup = ("geeks", "for", "geeks")
+for x in tup:
+    print(x)
+    
+s = "abc"
+for x in s:
+    print(x)
+    
+d = dict({'x':123, 'y':354})
+for x in d:
+    print("%s  %d" % (x, d[x]))
+    
+set1 = {10, 30, 20}
+for x in set1:
+    print(x),
+
+# Iterating by Index of Sequences
+li = ["geeks", "for", "geeks"]
+for index in range(len(li)):
+    print(li[index])
+
+# While Loop
+cnt = 0
+while (cnt < 3):
+    cnt = cnt + 1
+    print("Hello Geek")
+
+# Nested Loops
+for i in range(1, 5):
+    for j in range(i):
+        print(i, end=' ')
+    print()
+
+# Loop Control Statements
+for letter in 'geeksforgeeks':
+    if letter == 'e' or letter == 's':
+        continue
+    print('Current Letter :', letter)
+
+for letter in 'geeksforgeeks':
+    if letter == 'e' or letter == 's':
+        break
+print('Current Letter :', letter)
+
+for letter in 'geeksforgeeks':
+    pass
+print('Last Letter :', letter)
